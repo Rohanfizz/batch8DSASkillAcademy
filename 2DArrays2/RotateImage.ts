@@ -18,7 +18,7 @@ function rotate(arr: number[][]): void {
     let n = arr.length;
     //Step 1: Take the transpose of the matrix
     arr = transpose(arr);
-    //Step 2: Reverse all rows
+    //Step 2: Reverse all rows  
     for(let i = 0;i<n;i++){
         let l = 0;
         let r = n-1;
