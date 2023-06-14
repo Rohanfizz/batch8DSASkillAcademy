@@ -14,7 +14,7 @@ function toggleCase(s:any):string{
         }
 
         let newChar = String.fromCharCode(ascii);//ascii -> char 
-        ans += newChar;      
+        ans += newChar;
     }
     return ans;
 }
