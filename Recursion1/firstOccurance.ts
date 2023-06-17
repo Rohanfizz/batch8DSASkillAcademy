@@ -15,3 +15,7 @@ function doWorkInPost(arr:number[],i:number,n:number):number{
     if(arr[i] == n) return i;
     return next;
 }
+
+let arr = [1,2,3,1,2,3,1,2,3,10];
+console.log(doWorkInPre(arr,0,3))
+console.log(doWorkInPost(arr,0,3))
