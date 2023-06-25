@@ -7,10 +7,10 @@ function getStairPaths(n, tar, asf) {
     if (n > tar)
         return;
     //one jump
-    getStairPaths(n + 20, tar, asf + "20 + ");
+    getStairPaths(n + 1, tar, asf + "1");
     //two jump
-    getStairPaths(n + 50, tar, asf + "50 + ");
+    getStairPaths(n + 2, tar, asf + "2");
     //three jump
-    getStairPaths(n + 100, tar, asf + "100 + ");
+    getStairPaths(n + 3, tar, asf + "3");
 }
-getStairPaths(0, 300, "");
+getStairPaths(0, 5, "");

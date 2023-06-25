@@ -14,4 +14,4 @@ function getStairPaths(n: number, tar: number, asf: string): void {
     getStairPaths(n+3,tar,asf+"3");
 }
 
-getStairPaths(0,1000,"");
+getStairPaths(0,5,"");
