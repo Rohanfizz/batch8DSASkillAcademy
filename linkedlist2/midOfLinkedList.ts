@@ -161,8 +161,19 @@ ll.addLast(10);
 ll.addLast(20);
 ll.addLast(30);
 ll.addLast(40);
-ll.addLast(50); //10 20 30 40 50
-ll.removeAt(0); //20 30 40 50
-ll.removeAt(2); //20 30 50
-ll.addAt(2,100); // 20 30 100 50
-ll.display();
+// ll.addLast(50); //10 20 30 40
+
+console.log(getMid(ll.head));
+
+function getMid(head : ListNode | null) : number{
+    if(head == null){
+        return -1;
+    }
+    let slow : ListNode | null= head;
+    let fast : ListNode | null= head;
+    while(fast.next != null && fast.next.next != null){
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    return slow.val;
+}
